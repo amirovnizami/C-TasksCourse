@@ -1,0 +1,95 @@
+#include<iostream>
+using namespace std;
+void main() {
+	int kilogram = 0;
+	float gallon;
+	cout << "Kiloqrami daxil edin : ";
+	cin >> kilogram;
+	gallon = kilogram * 3.7;
+	cout << "Gallon : " << gallon;
+	
+	Task2
+	int qiymet = 0;
+	int usag;
+	int boyuk,umumi;
+	cout << "Biletlerin qiymetini qeyd edin : ";
+	cin >> qiymet;
+	cout << "Boyukler ucun bilet sayi : ";
+	cin >> boyuk;
+	cout << "Usaglar ucun bilet sayi : ";
+	cin >> usag;
+	umumi = boyuk * qiymet + (usag * (qiymet * 0.6));
+	cout << "Biletlerin umumi qiymeti : " << umumi;
+	Task3
+	int pul = 0;
+	int faiz = 0;
+	cout << "Ne qeder pul qoyursuz : ";
+	cin >> pul;
+	cout << "Faizi daxil edin : ";
+	cin >> faiz;
+	cout<<"1 il sonra sizin bankdaki mebleginiz : " << pul + (pul * faiz) / 100;
+	Task4
+	int mesafe = 0, litr = 0;
+	float b92 = 0, b93 = 0, b95 = 0;
+	cout << "Mesafeni daxil edin : ";
+	cin >> mesafe;
+	cout << "Litri daxil edin : ";
+	cin >> litr;
+	cout << "A92 ni daxil edin: ";
+	cin >> b92;
+	cout << "A93 ni daxil edin: ";
+	cin >> b93;
+	cout << "A95 ni daxil edin: ";
+	cin >> b95;
+	cout << "A92 = " << ((mesafe / 100) * litr) * b92 << "Azn";
+	cout << "A93 = " << ((mesafe / 100) * litr) * b93 << "Azn";
+	cout << "A95 = " << ((mesafe / 100) * litr) * b95 << "Azn";
+	Task5
+
+		int uzun = 0, en = 0, hun = 0;
+		int sahe, pencereler, boya;
+		cout << "Uzunlugu daxil edin : ";
+		cin >> uzun;
+		cout << "Eni daxil edin : ";
+		cin >> en;
+		cout << "Hundurluyu daxil edin : ";
+		cin >> hun;
+		sahe = uzun * en*hun;
+		pencereler = (sahe * 20) / 100;
+		boya = sahe - pencereler;
+		cout << "Size bu qeder reng lazimdir : " << (boya * 0.5) << " litr";
+	}
+	Task6
+	int eded = 0;
+	cout << "Ededi daxil edin : ";
+	cin >> eded;
+	int bir = eded / 100;
+	int iki = (eded / 10)%10;
+	int uc = eded % 10;
+	cout << bir;
+	cout << ",";
+	cout << iki;
+	cout << ",";
+	cout << uc;
+	Task7
+
+	int eded = 0;
+	cout << "Ededi daxil edin : ";
+	cin >> eded;
+	int bir = eded / 100;
+	int iki = (eded / 10)%10;
+	int uc = eded % 10;
+	cout << uc;
+	cout << iki;
+	cout << bir;
+	Task8
+	int eded = 0;
+	cout << "Ededi daxil edin : ";
+	cin >> eded;
+	int bir = eded / 1000;
+	int iki = (eded / 100)%10;
+	int uc = (eded / 10) % 10;
+	int dord = eded % 10;
+	cout << bir + uc << endl;
+	cout << iki - dord << endl;
+}
